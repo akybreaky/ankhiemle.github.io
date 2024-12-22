@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chatset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">An-Khiem Le</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">An-Khiem Le</div>
+            <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-pic" src="./Images/headshot.jpg" alt="An-Khiem Le's Profile Picture" border-radius: 200px;>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">An-Khiem Le</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Updated_An-Khiem_Le_CV.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="window.location.href='./#contact'">
+                    Contact 
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Images/icons8-linkedin-50.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/an-khiem-le/'"
+                    />
+                <img src="./Images/icons8-github-50.png"
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/akybreaky'"
+                    />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Images/icons8-work-experience-50.png"
+                            alt="Experience Icon"
+                            class="icon"
+                            />
+                            <h3> Experience</h3>
+                            <p> 2+ years <br> Computer Science Student</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Images/icons8-education-64.png"
+                            alt="Education Icon"
+                            class="icon"
+                            />
+                            <h3> Education</h3>
+                            <p>BCompSci at Concordia University</p>
+                    </div>
+                </div>
+                <div class="text=container">
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ea ducimus magnam accusantium laboriosam veniam praesentium
+                        explicabo cum. Quisquam autem eos totam laudantium excepturi
+                        est deleniti debitis! Cum quasi quibusdam numquam possimus ipsa
+                        sint voluptatibus soluta, asperiores reiciendis aliquid impedit
+                        fugiat praesentium laborum provident deleniti rerum, sequi autem
+                        eveniet maiores sapiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Developement</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Developement</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>C</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Clojure</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <!---This is where you can add images of your projects-->
+                </div>
+                <h2 class="experience-sub-title">Coming soon...</h2>
+            </div>
+        </div>
+        <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Images/icons8-email-50.png" alt="Email icon" class="icon contact-icon"/>
+                <p><a href="mailto:ankhiemle02@gmail.com">ankhiemle02@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./Images/icons8-linkedin-50.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="'https://www.linkedin.com/in/an-khiem-le/'">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 An-Khiem Le. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
