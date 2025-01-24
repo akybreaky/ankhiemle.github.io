@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An-Khiem Le's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+<body >
+    <header>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+        <nav id="desktop-nav">
+            <div class="logo">An-Khiem Le</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">An-Khiem Le</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img class="profile-pic" src="./Images/headshot.jpg" alt="An-Khiem Le's Profile Picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">An-Khiem Le</h1>
+                <p class="section__text__p2">Computer Science Student</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/Updated_An-Khiem_Le_CV.pdf')">
+                        Download CV
+                    </button>
+                    <a class="btn btn-color-1" href="#contact">Contact</a>
+                </div>
+                <div id="socials-container">
+                    <img src="./Images/icons8-linkedin-50.png" 
+                         alt="My LinkedIn profile" 
+                         class="icon" 
+                         onclick="location.href='https://www.linkedin.com/in/an-khiem-le/'">
+                    <img src="./Images/icons8-github-50.png" 
+                         alt="My GitHub profile" 
+                         class="icon" 
+                         onclick="location.href='https://github.com/akybreaky'">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get to Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./Images/icons8-work-experience-50.png" 
+                                 alt="Experience Icon" 
+                                 class="icon">
+                            <h3>Experience</h3>
+                            <p>2+ years <br> Computer Science Student</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./Images/icons8-education-64.png" 
+                                 alt="Education Icon" 
+                                 class="icon">
+                            <h3>Education</h3>
+                            <p>BCompSci at Concordia University</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ea ducimus magnam accusantium laboriosam veniam praesentium
+                            explicabo cum. Quisquam autem eos totam laudantium excepturi
+                            est deleniti debitis! Cum quasi quibusdam numquam possimus ipsa
+                            sint voluptatibus soluta, asperiores reiciendis aliquid impedit
+                            fugiat praesentium laborum provident deleniti rerum, sequi autem
+                            eveniet maiores sapiente. <b> My personal website is still under
+                            construction! If you're reading this, I included some of my
+                            current favourite tracks. Give them a listen!</b>
+                        </p>
+                        <br>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4srk9VdSiPW0IKqeX4KNDb?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4gtIYSYu8u2ItBqrhCaChL?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6jTQijAuYxOd8DjQ8D6UkL?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3sK8wGT43QFpWrvNQsrQya?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0qdPpfbrgdBs6ie9bTtQ1d?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/09LrGvT9KsACH66RHYMDyR?utm_source=generator" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='#experience'">
+        </section>
+
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="HTML Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="CSS Experience icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="JavaScript Experience icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="Java Experience icon" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="Python Experience icon" class="icon">
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>C</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>Clojure</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+    
+                            <article>
+                                <img src="./Images/icons8-checkmark-50.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>NodeJS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='#projects'">
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title">Coming soon...</h2>
+                </div>
+            </div>
+            <img src="./Images/icons8-arrow-down-50.png" alt="arrow down" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./Images/icons8-email-50.png" alt="Email icon" class="icon contact-icon">
+                    <p><a href="mailto:ankhiemle02@gmail.com">ankhiemle02@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./Images/icons8-linkedin-50.png" alt="LinkedIn icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/an-khiem-le/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169; 2025 An-Khiem Le. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
